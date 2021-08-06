@@ -6,10 +6,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../util/style.css">
     <meta charset="utf-8" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bouncing Ball in Circle</title>
 </head>
 
 <body>
+    <main id="main-content">
+        <div>
+            <h4>Initial Position</h4>
+            <input type="text" id="coord-ball-1" value="[1.0120, 150]">
+            <input type="text" id="coord-ball-2" value="[1.0121, 150]">
+            <div style="margin-top: 10px;">
+                <button id="reset">
+                    <i class="fas fa-redo"></i>
+                </button>
+                <button id="pause">
+                    <i class="fas fa-pause"></i>
+                </button>
+                <button id="play">
+                    <i class="fas fa-play"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
     <script src="../util/Particle.js"></script>
     <script src="main.js"></script>
 </body>

@@ -15,12 +15,11 @@ class Particle {
 
     update() {
         this.path.push(createVector(this.s.x, this.s.y));
-        if (this.path.length > 3000) {
-            this.path.splice(0, 1);
+        if (this.path.length > 5000) {
+            this.path = [];
         }
         this.v.add(this.a);
         this.s.add(this.v);
-        console.log(this.path.length);
         this.a.mult(0);
     }
 
@@ -31,7 +30,7 @@ class Particle {
         this.v.sub(neg);
     }
 
-    show(r, g, b, a) {
+    show(r, g, b) {
         if (r === undefined) {
             r = 255;
             g = 255;
